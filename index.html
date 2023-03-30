@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eazee Spinne</title>
+</head>
+<style>
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+
+    .wheelContainer{
+        top: 0;
+        left: -100%;
+        position: absolute;
+        height: 500px;
+        width: 500px;
+        transition: 1s all ease-in;
+    }
+
+    .wheelContainer.show{
+        left: 0;
+        transition: 1s all ease-in;
+    }
+
+    .ecommerce{
+        border: 2px solid black;
+        background-color: aliceblue;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .react-draggable{
+        position: fixed;
+        left: 100px;
+    }
+</style>
+<body>
+    <div class="ecommerce">
+        <p>This is Ecommerce Website...</p>
+    </div>
+    <div id="root">Not Rendered</div>
+    <script type="module" src="index.js" />
+</body>
+</html>
